@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script src="index.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap" rel="stylesheet">
+        <title>Bloc de notas</title>
+    </head>
+</html>
+<body>
+    <h1>Bienvenido a Notas v1.0</h1>
+    <div class="container">
+        <div class="flex-cont">
+            <div class="mid-wd">
+                <div id="form-notas" class=" round">
+                    <div class="flex-cont">
+                        <div class="mid-wd flex-cont flex-col">
+                            <input class="form-input round" placeholder="Titulo" id="titulo-nota">
+                            <textarea class="round" id="contenido-nota"></textarea>
+                        </div>
+
+                        <div class="mid-wd flex-cont flex-col">
+                           
+                            <button class="btn btn-np round" onclick="despliegaColor('titulo-color')">Cambiar color</button>
+                            <input class="color-input round" type="color" id="titulo-color">
+                            <button class="btn btn-np round" onclick="despliegaColor('contenido-color')">Cambiar color</button>
+                            <input class="color-input round" type="color" id="contenido-color">
+                            <button class="btn btn-np round" onclick="limpiaCampos()">Limpiar texto</button>
+                            <button class="btn btn-np round" onclick="cargaNota()">Guardar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mid-wd">
+                <div id="block-notas" class=" round">
+                    <h2>Mis notas</h2>
+                    <div class="mid-wd flex-cont flex-col" id="notes-container">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
